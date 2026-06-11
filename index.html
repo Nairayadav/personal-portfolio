@@ -1,98 +1,339 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naira Yadav | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-   <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naira Yadav | Cyber Security Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>Naira Yadav</h1>
-    <p>B.Tech CSE (Cyber Security) | 2nd Year</p>
-  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#" onclick="showLogin()">Login</a></li>
-    </ul>
-  </nav>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle">🌙</button>
 
-  <button id="toggle-theme">Dark Mode</button>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">NY</div>
 
-  <main>
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="edu-item">
-        <h3>B.Tech in CSE (Cyber Security)</h3>
-        <p>Pranveer Singh Institute of Technology<br><span class="year">Expected Graduation: 2027</span></p>
-      </div>
-      <div class="edu-item">
-        <h3>Intermediate - PCM</h3>
-        <p>Mother Teresa Mission Higher Secondary School<br><span class="year">Completed: 2023</span></p>
-      </div>
-      <div class="edu-item">
-        <h3>High School - PCM</h3>
-        <p>Mother Teresa Mission Higher Secondary School<br><span class="year">Completed: 2021</span></p>
-      </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#opensource">Open Source</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Naira Yadav</h1>
+
+            <h2 id="typing-text"></h2>
+
+            <p>
+                B.Tech CSE (Cyber Security) Student |
+                GSSoC 2026 Contributor |
+                AI & Cybersecurity Enthusiast
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                    View Projects
+                </a>
+
+                <a href="resume.pdf"
+                   class="btn-secondary"
+                   download>
+                    Download Resume
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a Cyber Security undergraduate at
+            Pranveer Singh Institute of Technology.
+
+            Passionate about Artificial Intelligence,
+            Cyber Security, Open Source Development,
+            and Software Engineering.
+
+            I enjoy building practical applications
+            using Python, Flask, Java, and Machine Learning
+            while continuously improving my problem-solving
+            and development skills.
+        </p>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Flask</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">GitHub</div>
+            <div class="skill-card">Cyber Security</div>
+            <div class="skill-card">DBMS</div>
+            <div class="skill-card">DSA</div>
+
+        </div>
+
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>E-Commerce Apparel Store</h3>
-        <p>Built a sleek and responsive online clothing store using HTML, CSS, and Bootstrap.</p>
-      </div>
-      <div class="project-item">
-        <h3>Personal Portfolio</h3>
-        <p>Designed and developed this portfolio using HTML, CSS, and JavaScript to reflect my academic journey.</p>
-      </div>
-      <div class="project-item">
-        <h3>Coin Collection Game</h3>
-        <p>Developed an interactive runner game using JavaScript with scoring logic and time-based challenges.</p>
-      </div>
+
+        <h2>Featured Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>AI Phishing Email Detector</h3>
+
+                <p>
+                    AI-powered phishing email detection
+                    system using Machine Learning,
+                    Flask, NLP, URL analysis,
+                    and keyword analysis.
+                </p>
+
+                <a href="https://github.com/Nairayadav/AI-Phishing-Email-Detector"
+                   target="_blank"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>AI Study Pattern Analyzer</h3>
+
+                <p>
+                    AI-driven study pattern analyzer
+                    that evaluates student habits,
+                    predicts performance,
+                    and delivers personalized
+                    recommendations.
+                </p>
+
+                <a href="https://github.com/Nairayadav/AI-Study-Pattern-Analyzer"
+                   target="_blank"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Binance Futures Order Executor</h3>
+
+                <p>
+                    Python-based Binance Futures Testnet
+                    trading bot with validation,
+                    logging, CLI execution,
+                    and error handling.
+                </p>
+
+                <a href="https://github.com/Nairayadav/binance-futures-order-executor"
+                   target="_blank"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>FourDotsAI</h3>
+
+                <p>
+                    AI-powered Connect Four game
+                    built using Java Swing
+                    with intelligent gameplay.
+                </p>
+
+                <a href="https://github.com/Nairayadav/FourDotsAI"
+                   target="_blank"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Password Generator Python</h3>
+
+                <p>
+                    Advanced password generator
+                    supporting customizable length,
+                    strength evaluation,
+                    and secure password generation.
+                </p>
+
+                <a href="https://github.com/Nairayadav/password-generator-python"
+                   target="_blank"
+                   class="project-btn">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    Personal portfolio website
+                    showcasing projects,
+                    technical skills,
+                    education,
+                    and achievements.
+                </p>
+
+                <a href="https://github.com/Nairayadav"
+                   target="_blank"
+                   class="project-btn">
+                    GitHub Profile
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Open Source Section -->
+    <section id="opensource" class="section">
+
+        <h2>Open Source Contributions</h2>
+
+        <div class="opensource-card">
+
+            <h3>GSSoC 2026 Contributor</h3>
+
+            <p>
+                Active contributor in open-source
+                projects through documentation updates,
+                bug fixes, and feature improvements.
+            </p>
+
+            <h4>SecuScan Contribution</h4>
+
+            <p>
+                Contributed to SecuScan through
+                pull requests, documentation enhancements,
+                and collaboration with maintainers.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+
+        <h2>Education</h2>
+
+        <div class="education-card">
+
+            <h3>
+                B.Tech Computer Science & Engineering
+                (Cyber Security)
+            </h3>
+
+            <p>
+                Pranveer Singh Institute of Technology
+            </p>
+
+            <p>
+                2023 - 2027
+            </p>
+
+        </div>
+
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="email" id="email" placeholder="Your email" required>
-        <textarea id="message" placeholder="Your message" required></textarea>
-        <button id="submit" type="submit">Send Message</button>
-      </form>
+
+        <h2>Contact Me</h2>
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <div class="social-links">
+
+            <a href="mailto:nairayadav70@gmail.com">
+                Email
+            </a>
+
+            <a href="https://github.com/Nairayadav" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/naira-yadav-0141802a8/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
     </section>
 
-    <!-- Login Section -->
-    <section id="login" class="section">
-      <h2>Admin Login</h2>
-      <form id="login-form">
-        <input type="text" id="username" placeholder="Username" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-        <button type="button" onclick="hideLogin()">Cancel</button>
-      </form>
-    </section>
+    <!-- Footer -->
+    <footer>
 
-    <!-- Admin Section -->
-    <section id="admin-section" class="section">
-      <h2>User Responses</h2>
-      <div id="user-responses"></div>
-    </section>
-  </main>
+        <p>
+            © 2026 Naira Yadav |
+            Cyber Security Portfolio
+        </p>
 
-  <!-- ✅ Script should be here -->
-  <script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
-
 </html>
+```
